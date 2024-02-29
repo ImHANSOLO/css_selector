@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Create a paragraph with a brown background and white font color */
+      p.brown-background {
+        background-color: brown;
+        color: white;
+      }
+
+      /* Create a div that is aligned in the center of your page */
+      .centered-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      /* Reverse the sizing of h1 through h6 elements */
+      h1 {
+        font-size: 1em;
+      }
+      h2 {
+        font-size: 1.17em;
+      }
+      h3 {
+        font-size: 1.33em;
+      }
+      h4 {
+        font-size: 1.5em;
+      }
+      h5 {
+        font-size: 1.67em;
+      }
+      h6 {
+        font-size: 2em;
+      }
+
+      /* Make any text within a span italic */
+      span {
+        font-style: italic;
+      }
+
+      /* Place 1 inch between any div on the page */
+      div {
+        margin: 1in;
+      }
+
+      /* Make any image with the word '_icon' 20 pixels by 20 pixels */
+      img[src*="_icon"] {
+        width: 20px;
+        height: 20px;
+      }
+
+      /* Paragraphs with an alt attribute have a top margin of 17 vh */
+      p[alt] {
+        margin-top: 17vh;
+      }
+
+      /* 1 pixel border on any cell in a table */
+      td,
+      th {
+        border: 1px solid black;
+      }
+
+      /* List items do not have a list marker */
+      li {
+        list-style-type: none;
+      }
+
+      /* If any h1 element is used, make the letter spacing 2 pixels */
+      h1 {
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="brown-background">
+      This paragraph has a brown background with white text.
+    </p>
+
+    <div class="centered-div">This div is centered on the page.</div>
+
+    <h1>Heading 1 (now the smallest)</h1>
+    <h6>Heading 6 (now the largest)</h6>
+
+    <span>This text is italic.</span>
+
+    <div>First div (1 inch margin around)</div>
+    <div>Second div (1 inch margin around)</div>
+
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/900px-Instagram_icon.png?20200512141346"
+      alt="Instagram Icon"
+    />
+
+    <p alt="This paragraph has a top margin of 17vh.">
+      Paragraph with 'alt' attribute and top margin.
+    </p>
+
+    <table>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+      </tr>
+      <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+      </tr>
+    </table>
+
+    <ul>
+      <li>List item 1 (no marker)</li>
+      <li>List item 2 (no marker)</li>
+    </ul>
+
+    <h1>This is a spaced heading</h1>
+  </body>
+</html>
